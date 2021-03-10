@@ -1,0 +1,401 @@
+*{
+    margin:0 auto;
+    box-sizing: border-box;
+}
+body{
+    background: #ffff;
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+}
+
+.main__header {
+
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: linear-gradient(to right, hsla(130, 59%, 41%, 0.459), hsla(157, 84%, 43%, 0.664)) , url(../imagenes/imagen1.jpeg);
+  
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+     .textos__header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+            h1{
+            font-size: 50px;
+            color:#fff;
+        }
+            h2{
+                font-size: 30px;
+                font-weight: 300;
+                color:#fff;
+            
+           
+        }
+    }
+}
+
+  
+  .wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .about-us{width: 100%;}
+
+  .info{
+      width: 100%;
+      margin-top: 50px;
+
+      h3{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 1000;
+    }
+        p{
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+        color: #000;
+        font-size: 20px;
+        line-height: 40px;
+    }
+  }
+  /*porfatofio*/
+ 
+
+
+.portafolio{
+    background: #f2f2f2;
+
+
+
+    .titulo{
+        color: white;
+        text-align: center;
+        background: rgb(44, 170, 92);
+    }
+.galeria__port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+.imagen__port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+    @media (max-width: 768px) {
+ 
+            width: 45%;
+            
+    
+        
+    }
+
+
+    > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+}
+}
+
+
+
+
+.hover__galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    img{
+        width: 50px;
+    }
+
+
+        p{
+        color: #fff;
+        }
+    
+}
+
+.imagen__port:hover .hover__galeria{
+    transform: scale(1);
+}
+}
+/*informacion*/
+
+
+.margen{
+    width: 90%;
+    margin: 0 auto;
+
+.about__container{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+    h2{
+        color: #034e1c;
+    }
+
+}
+.about.imginfo{
+    text-align: center;
+ }
+
+    .about__imginfo--left{
+        text-align: left;
+
+    
+}
+.about__Picture{
+    max-width: 80%;
+
+}
+.about__parrafo{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+
+}
+}
+
+/*profesores*/
+.subtitle{
+   text-align: center;
+   font-size: 40px;
+}
+
+.profesores__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+
+}
+@media(max-width: 768px){
+    .profesores__grid{
+        grid-template-columns: 1fr;
+    }
+}
+.profesores__item{
+    width: 95%;
+    background: #034e1c;
+    box-shadow: 0 8px 10px green;
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: #FFF;
+    margin-bottom: 50px;
+
+ 
+
+.profesores__person{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+.profesores__img{
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    margin-right: 30px;
+}
+.profesores__name{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.profesores__dedicacion{
+    color: greenyellow;
+    font-weight: 700;
+}
+}
+
+.profesores__reseña{
+    font-weight: 300;
+}
+}
+
+/*pago*/
+
+.pagopago {
+
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: linear-gradient(to right, hsla(130, 59%, 41%, 0.459), hsla(157, 84%, 43%, 0.664)) , url(../imagenes/pago.jpg);
+  
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.textos__header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+            h1{
+            font-size: 50px;
+            color:#fff;
+        }
+            h2{
+                font-size: 30px;
+                font-weight: 300;
+                color:#fff;
+            
+           
+        }
+    }
+
+
+  
+  .wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+    .containterpago h3{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 1000;
+        margin-top: 60px;
+    }
+    .containterpago p{
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+        color: #000;
+        font-size: 20px;
+        line-height: 40px;
+
+
+        animation-duration: 2s;
+        animation-name: emir;
+        animation-iteration-count: 10s;
+    
+    }
+
+    @keyframes emir { 
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+        }
+    .tablapago{
+        
+        margin-bottom: 100px;
+        
+    }
+    
+    @media (max-width: 768px) {
+
+        .botones {
+            display: grid;
+            
+            margin: auto;
+            
+    
+        } 
+    }
+
+
+
+
+
+
+    /*footer*/
+
+    footer{
+        margin-top: 30px;
+        background: #414141;
+        padding: 60px 0 30px 0;
+  
+        overflow: hidden;
+        background-image: linear-gradient(to left, #034e1c, #000 );
+    }
+    
+        
+ 
+    
+    .contenedor__footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+    
+    }
+    @media(max-width: 768px){
+        .contenedor__footer{
+            flex-direction: column;
+        }
+    }
+
+    .content__foo{
+        text-align: center;
+    
+    
+    h4{
+        color: #fff;
+        border-bottom: 3px solid #af20d3;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    h3{
+        color: #fff;
+        border-bottom: 3px solid #af20d3;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    
+    p{
+        color: #ccc;
+    }
+}
+    
+    .titulo__final{
+        text-align: center;
+        font-size: 24px;
+        margin: 20px 0 0 0;
+        color: #9e9797;
+    }
+
+ 
