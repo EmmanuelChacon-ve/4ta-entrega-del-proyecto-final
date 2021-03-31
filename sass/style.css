@@ -22,6 +22,22 @@ body {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .main__header {
+    height: auto;
+    background-attachment: unset;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 550px) {
+  .main__header {
+    height: auto;
+    background-attachment: unset;
+    background-position: center center;
+  }
+}
+
 .main__header .textos__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,6 +136,12 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .portafolio .galeria__port .imagen__port {
+    width: 100%;
+  }
+}
+
 .portafolio .galeria__port .imagen__port > img {
   width: 100%;
   height: 100%;
@@ -169,7 +191,14 @@ body {
 }
 
 /*informacion*/
+@media (max-width: 768px) {
+  .subtitle {
+    width: 100%;
+  }
+}
+
 .margen {
+  padding: 10px;
   width: 90%;
   margin: 0 auto;
 }
@@ -210,6 +239,10 @@ body {
 }
 
 /*profesores*/
+.profesores {
+  max-width: 900px;
+}
+
 .subtitle {
   text-align: center;
   font-size: 40px;
@@ -291,6 +324,22 @@ body {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .pagopago {
+    height: auto;
+    background-attachment: unset;
+    background-position: center center;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 550px) {
+  .pagopago {
+    height: auto;
+    background-attachment: unset;
+    background-position: center center;
+  }
+}
+
 .textos__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,16 +412,26 @@ body {
   }
 }
 
-.tablapago {
-  margin-bottom: 100px;
+.card {
+  margin: 0, 2rem;
 }
 
-@media (max-width: 768px) {
-  .botones {
-    display: -ms-grid;
-    display: grid;
-    margin: auto;
+@media (max-width: 980px) {
+  .card {
+    max-width: 100%;
   }
+}
+
+.card form {
+  padding: 10px;
+}
+
+.form-select {
+  margin-top: 10px;
+}
+
+.btn {
+  color: #034e1c;
 }
 
 /*footer*/

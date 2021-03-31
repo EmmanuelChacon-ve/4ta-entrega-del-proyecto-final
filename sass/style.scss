@@ -10,15 +10,31 @@ body{
 
 .main__header {
 
+
     width: 100%;
     height: 600px;
     background: #bc4e9c;
-    background: linear-gradient(to right, hsla(130, 59%, 41%, 0.459), hsla(157, 84%, 43%, 0.664)) , url(../imagenes/imagen1.jpeg);
-  
+    background: linear-gradient(to right, hsla(130, 59%, 41%, 0.459), hsla(157, 84%, 43%, 0.664)) , url(../imagenes/imagen1.jpeg); 
+
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 
+    @media (max-width: 768px) {
+        height: auto;
+        background-attachment: unset;
+        background-position: center center;
+
+        @media (max-width: 550px) {
+            height: auto;
+            background-attachment: unset;
+            background-position: center center;
+            
+        }
+        
+    
+        
+    }
      .textos__header{
     display: flex;
     height: 430px;
@@ -101,9 +117,17 @@ body{
  
             width: 45%;
             
-    
+
         
     }
+
+    @media (max-width: 500px){
+ 
+        width: 100%;
+        
+
+    
+}
 
 
     > img{
@@ -149,11 +173,21 @@ body{
 }
 }
 /*informacion*/
-
+.subtitle{
+    @media (max-width: 768px){
+        
+        width: 100%;
+        
+        
+ }
+}
 
 .margen{
+    padding: 10px;
     width: 90%;
     margin: 0 auto;
+
+  
 
 .about__container{
     min-height: 400px;
@@ -162,8 +196,12 @@ body{
     row-gap: 80px;
     justify-items: center;
     align-items: center;
+
     h2{
         color: #034e1c;
+
+
+        
     }
 
 }
@@ -189,6 +227,11 @@ body{
 }
 
 /*profesores*/
+
+.profesores{ max-width: 900px;
+
+}
+
 .subtitle{
    text-align: center;
    font-size: 40px;
@@ -251,6 +294,7 @@ body{
 
 /*pago*/
 
+
 .pagopago {
 
     width: 100%;
@@ -261,7 +305,24 @@ body{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+
+    @media (max-width: 768px) {
+        height: auto;
+        background-attachment: unset;
+        background-position: center center;
+
+        @media (max-width: 550px) {
+            height: auto;
+            background-attachment: unset;
+            background-position: center center;
+            
+        }
+        
+    }
 }
+
+
+
 .textos__header{
     display: flex;
     height: 430px;
@@ -313,29 +374,35 @@ body{
     }
 
     @keyframes emir { 
+
         from {
           margin-left: 100%;
           width: 300%
         }
         }
-    .tablapago{
-        
-        margin-bottom: 100px;
-        
-    }
-    
-    @media (max-width: 768px) {
+ 
 
-        .botones {
-            display: grid;
+        .card{
             
-            margin: auto;
+            margin:0, 2rem;
+
+            @media(max-width: 980px){
+               max-width: 100%;
+            }
             
     
-        } 
-    }
+            form{
+                padding: 10px;
+            }
+      
+        }
+        .form-select{
+            margin-top: 10px;
+        }
 
-
+        .btn{
+            color: #034e1c;
+        }
 
 
 
